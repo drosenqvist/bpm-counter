@@ -1,0 +1,90 @@
+:root {
+  --off-white: #F0F0F0;
+  --light-gray: #CFCFCF;
+  --light-box-shadow: 5px 5px 4px 2px rgba(1, 1, 1, 0.1);
+}
+
+h1, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 75px auto 140px;
+  height: 100%;
+  margin: 0;
+  background-color: #457B9D;
+}
+
+  header, main, footer {
+    display: flex;
+  }
+
+    header h1 {
+      margin: 0.625rem 0 0 1.5625rem;
+      transform: skew(10deg);
+      font-size: 4rem;
+      color: var(--off-white);
+      text-decoration: underline var(--off-white);
+    }
+
+    header h1:hover {
+      transition: 0.2s;
+      text-decoration: underline var(--light-gray);
+      color: var(--light-gray);
+    }
+
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+
+    main .tempo-button {
+      height: 30rem;
+      width: 30rem;
+      border-radius: 100%;
+      cursor: pointer;
+      outline: none;
+      box-shadow: var(--light-box-shadow);
+      font-size: 3rem;
+      color: #454545;
+    }
+
+      main .tempo-button:hover {
+        transition: 0.2s;
+        color: black;
+      }
+
+      main .tempo-button:active {
+        height: 28rem;
+        width: 28rem;
+        margin-top: 0.4rem;
+        transition: 0.2s;
+        font-size: 3.3rem;
+      }
+
+footer {
+  justify-content: flex-end;
+}
+
+  footer .social-media {
+    display: flex;
+    width: 7.5rem;
+    margin: 0 1.25rem 1.25rem 0;
+    border-radius: 100%;
+    box-shadow: var(--light-gray);
+    background-color: var(--off-white);
+  }
+    
+  footer .social-media a {
+    margin: 2.37rem 0 0 0.7rem;
+  }
+    
+    footer .social-media img {
+      width: 2.7rem;
+    }
+    
+    footer .social-media img:hover {
+      transition: 0.2s;
+      opacity: 0.7;
+    }
