@@ -1,7 +1,6 @@
 :root {
   --off-white: #F0F0F0;
   --light-gray: #CFCFCF;
-  --light-box-shadow: 5px 5px 4px 2px rgba(1, 1, 1, 0.1);
 }
 
 h1, button {
@@ -45,7 +44,7 @@ body {
       border-radius: 100%;
       cursor: pointer;
       outline: none;
-      box-shadow: var(--light-box-shadow);
+      box-shadow: 5px 5px 4px 2px rgba(1, 1, 1, 0.1);
       font-size: 3rem;
       color: #454545;
     }
